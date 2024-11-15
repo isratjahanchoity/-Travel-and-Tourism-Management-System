@@ -12,27 +12,27 @@ public class DeleteCustomer extends JFrame implements ActionListener{
     String username;
     private JPanel contentPane;
     Choice c1;
-
-    public static void main(String[] args) throws SQLException {
-       // this.username = username;
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-//                    DeleteCustomer frame = new DeleteCustomer();
-//                    frame.setVisible(true);
-                   
-                    
-                    Dashboard l = new Dashboard("");
-                    l.setVisible(true);
-                
-                
-                
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-    }
+//
+//    public static void main(String[] args) throws SQLException {
+//       // this.username = username;
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                try {
+////                    DeleteCustomer frame = new DeleteCustomer();
+////                    frame.setVisible(true);
+//                   
+//                    
+//                    Dashboard l = new Dashboard("");
+//                    l.setVisible(true);
+//                
+//                
+//                
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
+//    }
 
     public DeleteCustomer() throws SQLException {
         setBounds(580, 220, 850, 550);
@@ -196,11 +196,19 @@ public class DeleteCustomer extends JFrame implements ActionListener{
         contentPane.add(btnExit);
 
         getContentPane().setBackground(Color.WHITE);
+        setVisible(true);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+      public static void main(String[] args) throws SQLException {
+        System.out.println("delete page");
+        // new AddCustomer("username");
+       new DeleteCustomer();
+        //new AddCustomer("Israt Jahan Choity");
     }
 }
 
