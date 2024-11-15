@@ -1,0 +1,32 @@
+# Ignore compiled Java files
+*.class
+
+# Ignore all jar files (Java libraries)
+*.jar
+
+# Ignore all war files (Java web archives)
+*.war
+
+# Ignore all ear files (Java enterprise archives)
+*.ear
+
+# Ignore Maven's local repository and target folder
+.m2/
+target/
+
+# Ignore Gradle wrapper files and build folder
+.gradle/
+build/
+
+# Ignore IDE-specific files and directories
+/.idea/
+/.vscode/
+*.iml
+
+# Ignore log files and temporary files
+*.log
+*.tmp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
